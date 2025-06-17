@@ -1,0 +1,244 @@
+<!-- Código HTML --> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menta Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">¿Quiénes somos?</a>
+        <a href="#productos">Nuestras creaciones</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#equipo">Únete al equipo</a> 
+    </nav>
+</header>
+
+<main>
+<section id="inicio">
+    <img src="logo.jpg" alt="logo" width="600">
+    <h2>Bienvenidos</h2>
+    <h3>Donde el diseño cobra vida</h3>
+    <br>
+    <p>Somos una agencia de diseño y branding apasionada por transformar ideas en experiencias visuales 
+        únicas y memorables. Creemos que el diseño va más allá de lo estético; es una poderosa herramienta 
+        para comunicar emociones, valores y propósitos. Nuestro enfoque se basa en la creación de marcas 
+        con identidad propia, que no solo destaquen visualmente, sino que también transmitan una historia 
+        auténtica y conecten de manera profunda con su audiencia. Nos especializamos en desarrollar 
+        estrategias creativas que refuercen la personalidad de cada marca, combinando innovación, creatividad 
+        y una comprensión detallada del mercado. Cada proyecto es una oportunidad para dar vida a conceptos 
+        originales, fusionando diseño, color, tipografía y storytelling en una identidad visual sólida y 
+        coherente. 
+        </p>
+        <br>
+    <video width="600" controls autoplay loop muted>
+        <source src="videoinicio.mp4" type="video/mp4">
+    </video>
+    <br>
+    <a href="#productos" class="btn">Nuestros productos</a>
+</section>
+<br>
+<section id="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <br>
+    <img src="equipo.jpg" alt="equipo">
+    <br>
+    <p>No creemos en los logos sin alma ni en las marcas que pasan desapercibidas. Somos un equipo de diseñadores y
+        amantes del branding que viven y respiran creatividad. Nos obsesiona encontrar esa chispa visual que hace que
+        una marca no solo se vea bien, sino que se sienta bien...</p>
+        <br>
+    <video width="600" controls autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+<br>
+<section id="productos">
+    <h2>Nuestro trabajo</h2>
+    <br>
+    <img src="poner4.jpg" alt="trabajo1" >
+    <img src="poner2.jpg" alt="trabajo2" >
+    <img src="poner3.jpg" alt="trabajo3">
+    <img src="poner.jpg" alt="trabajo4">
+    <br>
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="brand1.jpg" alt="Branding 1" ></td>
+                <td>Identidad Visual Premium</td>
+            </tr>
+            <tr>
+                <td><img src="brand2.jpg" alt="Branding 2" ></td>
+                <td>Rebranding Completo</td>
+            </tr>
+            <tr>
+                <td><img src="website1.jpg" alt="Website 1" ></td>
+                <td>Diseño de Página Web</td>
+            </tr>
+            <tr>
+                <td><img src="website2.jpg" alt="Website 2" ></td>
+                <td>E-Commerce Personalizado</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<br>
+<section id="contacto">
+    <h2>Encuéntranos:</h2>
+    <p>
+        📍 Dirección: Calle Menta 6, Ciudad Imaginaria, País Fantasía
+        <br>
+        📞 Teléfono: +1 (555) 123-4567
+        <br>
+        📧 Correo: menta@email.com
+        <br>
+    </p>
+    <br>
+    <h2>¿Cómo podemos ayudarte?</h2>
+    <h3>Consultas sobre proyectos</h3>
+    <form action="proceso.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required>
+        
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" required>
+        
+        <h5>Estoy principalmente interesadx en...</h5>
+        <input type="checkbox" name="opciones" checked> Branding
+        <input type="checkbox" name="opciones" checked> Website
+        <input type="checkbox" name="opciones" checked> Ilustración
+        <input type="checkbox" name="opciones" checked> Otros
+        <br>
+
+        <h5>Descríbenos por encima lo que tienes en mente:</h5>
+        <textarea name="comentario"></textarea>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <label for="telefono">Teléfono de contacto (opcional)</label>
+        <input type="text" name="telefono">
+    </form>
+    <video class="video-contacto" controls autoplay loop muted>
+        <source src="ponervideo.mp4" type="video/mp4"> 
+        </video>
+        <br>
+</section>
+<br>
+
+
+
+<section id="equipo">
+    <form action="proceso.php" method="post" enctype="multipart/form-data">
+        <h3>Únete al equipo</h3>
+    <p>Mandanos tu currículum o tu carta de presentación, te tendremos en cuenta para futuras vacantes...</p>
+        <h4>Datos personales</h4>
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos">
+        
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <h4>Sexo</h4>
+        <input type="radio" name="sexo" value="fem" required> Femenino
+        <input type="radio" name="sexo" value="masc" required> Masculino
+        <input type="radio" name="sexo" value="x" required> Otros
+        <br>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+
+        <label for="ciudad">Ciudad</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="" disabled selected>Selecciona una ciudad</option>
+            <option value="almeria">Almería</option>
+            <option value="murcia">Murcia</option>
+            <option value="granada">Granada</option>
+            <option value="malaga">Málaga</option>
+            <option value="jaen">Jaén</option>
+        </select>
+
+        <label for="nacionalidad">Nacionalidad</label>
+        <input type="text" id="nacionalidad" name="nacionalidad">
+
+        <label for="cp">Código</label>
+        <input type="text" id="cp" name="cp">
+
+        <h4>Formación y titulaciones</h4>
+        <label for="estudios">Estudios</label>
+        <input type="text" id="estudios" name="estudios">
+
+        <label for="año">Año de inicio</label>
+        <input type="text" name="año" id="año"> 
+
+        <label for="año2">Año de finalización</label>
+        <input type="text" name="año2" id="año2"> 
+
+        <h4>Idiomas</h4>
+        <label for="idioma">Idioma</label>
+        <select name="idioma" id="idioma"> 
+             <option value="espanol">Español</option>
+             <option value="ingles">Inglés</option>
+             <option value="frances">Francés</option>
+        </select>
+
+        <label for="hablado">Hablado</label>
+        <select name="hablado" id="hablado"> 
+              <option value="excelente">Excelente</option>
+              <option value="bueno">Bueno</option>
+              <option value="regular">Regular</option>
+              <option value="nada">Nada</option>
+        </select>
+
+        <label for="leido">Leído:</label>
+        <select name="leido" id="leido">
+              <option value="excelente">Excelente</option>
+              <option value="bueno">Bueno</option>
+              <option value="regular">Regular</option>
+              <option value="nada">Nada</option>
+        </select>
+
+        <label for="escrito">Escrito:</label>
+        <select name="escrito" id="escrito">
+               <option value="excelente">Excelente</option>
+               <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="nada">Nada</option>
+        </select>
+
+        <p>Adjunta a continuación tu currículum y/o carta de presentación en formato PDF</p>
+        <input type="file" name="archivo" required>
+        <button type="submit">Mandar archivo</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <h4>📲 También puedes visitarnos en:</h4>
+    <a href="https://instagram.com" target="_blank">
+        <img src="insta.ico" alt="Instagram" width="25">
+    </a>
+    <a href="https://www.tiktok.com/es" target="_blank">
+        <img src="tiktok.ico" alt="TikTok" width="25">
+    </a>
+</footer>
+
+</body>
+</html>
+
